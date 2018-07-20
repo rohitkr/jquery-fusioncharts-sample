@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./node_modules/fusioncharts/fusioncharts.js"></script>
+  <script src="./node_modules/fusioncharts/fusioncharts.charts.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/jquery-fusioncharts/dist/fusioncharts.jqueryplugin.js"></script>
+</head>
+<body>
+  <div id="chart-container"></div>
+  <script>
+    $('#chart-container').insertFusionCharts({
+      type: 'column2d',
+      width: '600',
+      height: '300',
+      dataSource: {data: [{value: 9}]}
+    });
+  </script>
+</body>
+</html>
